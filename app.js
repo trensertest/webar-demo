@@ -11,7 +11,7 @@ function loadMarkers(){
 
 	
 	// Upadate tracking image URL
-	let baseUrl = "https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/sandeepkronline/arcamera-app/main/track/";
+	let baseUrl = "https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/trensertest/webar-demo/main/track/";
 	let imageSample = baseUrl + imageId + ".mind;";
 	imageSample = "imageTargetSrc: " + imageSample;
 	console.log(imageSample);
@@ -45,12 +45,12 @@ function load3dModles(){
 	markerDiv.setAttribute("rotation", "0 0 0" );
 	markerDiv.setAttribute("position", "0 0 0" );
 	if( modelId == "1"){
-		markerDiv.setAttribute("gltf-model", "models/3D/bear.gltf");
+		markerDiv.setAttribute("gltf-model", "models/3D/bear/scene.gltf");
 		markerDiv.setAttribute("scale", "0.05 0.05 0.05");	animation-mixer
 		markerDiv.setAttribute("animation-mixer","");
 	}
 	else if( modelId == "2"){
-		markerDiv.setAttribute("gltf-model", "models/3D/raccon.gltf");
+		markerDiv.setAttribute("gltf-model", "models/3D/raccoon/scene.gltf");
 		markerDiv.setAttribute("scale", "0.05 0.05 0.05");	
 		markerDiv.setAttribute("animation-mixer","");
 	}
