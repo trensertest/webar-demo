@@ -76,8 +76,15 @@ function loadImages(){
 		markerDiv.setAttribute("src", "models/Image/Osaka.gif");
 		markerDiv.setAttribute("scale", "1 1 1");
 	}
-	else{
+	else if( modelId == "3"){
 		markerDiv.setAttribute("src", "models/Image/love.png");
+		markerDiv.setAttribute("scale", "1 1 1");
+	}
+	else if( modelId == "4"){
+		markerDiv.setAttribute("src", "models/Image/4.jpg");
+		markerDiv.setAttribute("scale", "1 1 1");
+	} else {
+		markerDiv.setAttribute("src", "models/Image/5.jpg");
 		markerDiv.setAttribute("scale", "1 1 1");
 	}
 	var element = document.getElementById("#modelEntity");
