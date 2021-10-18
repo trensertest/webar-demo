@@ -46,7 +46,7 @@ function load3dModles(){
 	markerDiv.setAttribute("position", "0 0 0" );
 	if( modelId == "1"){
 		markerDiv.setAttribute("gltf-model", "models/3D/bear/scene.gltf");
-		markerDiv.setAttribute("scale", "0.05 0.05 0.05");	animation-mixer
+		markerDiv.setAttribute("scale", "0.05 0.05 0.05");
 		markerDiv.setAttribute("animation-mixer","");
 	}
 	else if( modelId == "2"){
