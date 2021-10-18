@@ -29,6 +29,11 @@ function loadMarkers(){
 	{
 		loadText()
 	}
+
+
+		
+	//https://carnaux.github.io/NFT-Marker-Creator/
+	//https://console.echo3d.co/#/pages/contentmanager
 }
 
 function load3dModles(){
@@ -36,6 +41,9 @@ function load3dModles(){
 	let modelId = urlParams.get("model")
 	
 	const markerDiv = document.createElement("a-gltf-model");
+	const arModelDiv = document.createElement("a-asset-item");
+	arModelDiv.setAttribute("id", "#arModel");
+	
 	//markerDiv.setAttribute("animation","property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate");
 	markerDiv.setAttribute("rotation", "0 0 0" );
 	markerDiv.setAttribute("position", "0 0 0" );
@@ -50,6 +58,7 @@ function load3dModles(){
 	else if( modelId == "3"){
 		markerDiv.setAttribute("gltf-model", "models/3D/sphere.glb");
 		markerDiv.setAttribute("scale", "0.75 0.75 0.75");	
+		markerDiv.setAttribute("animation-mixer","");
 	}
 	else if (modelId == "4"){
 		markerDiv.setAttribute("gltf-model", "models/3D/skyscraper.gltf");
