@@ -41,14 +41,24 @@ function load3dModles(){
 	let modelId = urlParams.get("model")
 	
 	const markerDiv = document.createElement("a-gltf-model");
-	markerDiv.setAttribute("animation","property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate");
+	//markerDiv.setAttribute("animation","property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate");
 	markerDiv.setAttribute("rotation", "0 0 0" );
 	markerDiv.setAttribute("position", "0 0 0" );
 	if( modelId == "1"){
+		markerDiv.setAttribute("gltf-model", "models/3D/bear.gltf");
+		markerDiv.setAttribute("scale", "0.05 0.05 0.05");	animation-mixer
+		markerDiv.setAttribute("animation-mixer","");
+	}
+	else if( modelId == "2"){
+		markerDiv.setAttribute("gltf-model", "models/3D/raccon.gltf");
+		markerDiv.setAttribute("scale", "0.05 0.05 0.05");	
+		markerDiv.setAttribute("animation-mixer","");
+	else if( modelId == "3"){
 		markerDiv.setAttribute("gltf-model", "models/3D/sphere.glb");
 		markerDiv.setAttribute("scale", "0.75 0.75 0.75");	
+		markerDiv.setAttribute("animation-mixer","");
 	}
-	else if (modelId == "2"){
+	else if (modelId == "4"){
 		markerDiv.setAttribute("gltf-model", "models/3D/skyscraper.gltf");
 		markerDiv.setAttribute("scale", "0.05 0.05 0.05");
 	}
