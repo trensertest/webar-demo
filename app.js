@@ -57,7 +57,7 @@ function load3dModles(){
 		markerDiv.setAttribute("gltf-model", "models/3D/cutecat.glb");
 		markerDiv.setAttribute("scale", "0.25 0.25 0.25");		
 	}else{
-		arkerDiv.setAttribute("gltf-model", "models/3D/skyscraper.gltf");
+		markerDiv.setAttribute("gltf-model", "models/3D/skyscraper.gltf");
 		markerDiv.setAttribute("scale", "0.05 0.05 0.05");		
 	}
 	var element = document.getElementById("#modelEntity");
