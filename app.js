@@ -71,11 +71,11 @@ function loadImages(){
 	markerDiv.setAttribute("rotation", "0 0 0" );
 	markerDiv.setAttribute("position", "0 0 0" );
 	if( modelId == "1"){
-		markerDiv.setAttribute("src", "models/Image/butterflies.gif");
+		markerDiv.setAttribute("src", "models/Image/Osaka.gif");
 		markerDiv.setAttribute("scale", "1 1 1");
 	}
 	else if( modelId == "3"){
-		markerDiv.setAttribute("src", "models/Image/Osaka.gif");
+		markerDiv.setAttribute("src", "models/Image/butterflies.gif");
 		markerDiv.setAttribute("scale", "1 1 1");
 	}
 	else if( modelId == "2"){
