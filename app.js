@@ -75,11 +75,11 @@ function loadImages(){
 		markerDiv.setAttribute("src", "models/Image/butterflies.gif");
 		markerDiv.setAttribute("scale", "1 1 1");
 	}
-	else if( modelId == "2"){
+	else if( modelId == "3"){
 		markerDiv.setAttribute("src", "models/Image/Osaka.gif");
 		markerDiv.setAttribute("scale", "1 1 1");
 	}
-	else if( modelId == "3"){
+	else if( modelId == "2"){
 		markerDiv.setAttribute("src", "models/Image/love.png");
 		markerDiv.setAttribute("scale", "1 1 1");
 	}
