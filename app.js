@@ -47,14 +47,14 @@ function load3dModles(){
 		markerDiv.setAttribute("gltf-model", "models/3D/raccoon/scene.gltf");
 		markerDiv.setAttribute("scale", "0.05 0.05 0.05");	
 	}
-	else if( modelId == "3"){
+	else if( modelId == "5"){
 		markerDiv.setAttribute("gltf-model", "models/3D/sphere.glb");
 		markerDiv.setAttribute("scale", "0.75 0.75 0.75");	
 	}
 	else if (modelId == "4"){
 		markerDiv.setAttribute("gltf-model", "models/3D/skyscraper.gltf");
 		markerDiv.setAttribute("scale", "0.05 0.05 0.05");
-	}else if (modelId == "5"){
+	}else if (modelId == "3"){
 		markerDiv.setAttribute("gltf-model", "models/3D/trex/scene.gltf");
 		markerDiv.setAttribute("scale", "0.025 0.025 0.025");		
 	}else{
